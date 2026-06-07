@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script defer src="main.js"></script></head>
+<body>
+    <form action="" novalidate id="inpForm">
+        <label for="email">email</label>
+        <input type="email" id="email" required minlength="2" >
+        <span class="error email" aria-live="polite"></span>
+        <label for="country">country(min length 4 characters, only letters)</label>
+        <input type="text" id="country" required minlength="4">
+        <span class="error country" aria-live="polite"></span>
+        <label for="pcode">post code(min lengt 6 characters, only digits)</label>
+        <input type="text" id="pcode" required minlength="6">
+        <span class="error pcode" aria-live="polite"></span>
+        <label for="password">password(must contain at least 1 lowercase, 1 uppercase letter, 1 digit, and 1 special character; min length 8 characters)</label>
+        <input type="text" id="password" required minlength="8">
+        <span class="error password" aria-live="polite"></span>
+        <label for="rpassword">repeat password(it must match the provided password)</label>
+        <input type="text" id="rpassword">
+        <span class="error rpassword" aria-live="polite"></span>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
